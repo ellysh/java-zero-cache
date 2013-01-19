@@ -18,7 +18,7 @@ MODULE_NAME = registrar_client
 all: clean $(MODULE_NAME)
 
 $(MODULE_NAME):
-	swig -java -c++ -make_default $(MODULE_NAME).i
+	swig -java -package org.zero_cache.java -c++ -make_default $(MODULE_NAME).i
 	gcc -c -fpic $(MODULE_NAME)_wrap.cxx $(CPP_FILES) -DHAVE_CONFIG_H $(CXXFLAGS)
 	g++ -shared $(OBJ_FILES) $(MODULE_NAME)_wrap.o -lzmq -o lib$(MODULE_NAME).so
 
