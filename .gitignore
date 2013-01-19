@@ -1,7 +1,6 @@
 *.o
 *.so
 *.cxx
-*.pyc
 *.1
 *.log
 deb/
@@ -9,8 +8,8 @@ deb/
 *.substvars
 *.debhelper
 
-registrar_client.py
-
+source/interface/*.java
 
 debian/files
-debian/python-zero-cache/
+debian/buildroot
+debian/java-zero-cache/
