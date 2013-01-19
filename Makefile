@@ -1,4 +1,4 @@
-SUBDIRS = source
+SUBDIRS = source test
 
 .PHONY: all deb $(SUBDIRS)
 
