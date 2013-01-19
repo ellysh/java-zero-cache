@@ -1,4 +1,5 @@
-SOURCE_FILES = get_test.java tcp_test.java
+all: clean
+	javac *.java
 
-all:
-	javac $(SOURCE_FILES)
+clean:
+	rm -Rf *.class
