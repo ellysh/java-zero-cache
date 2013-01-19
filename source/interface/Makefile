@@ -29,4 +29,4 @@ install:
 	cp _$(MODULE_NAME).so $(DESTDIR)/$(INSTALL_LIB_DIR)
 
 clean:
-	rm -f *_wrap.* *.so *.o *.py
+	rm -f *_wrap.* *.so *.o *.java
